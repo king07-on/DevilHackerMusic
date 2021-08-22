@@ -1,9 +1,9 @@
 {
-  "name": "Music Bot",
+  "name": "★♡𝐓𝐫𝐢𝐬𝐡𝐚 𝐌𝐲 𝐋𝐢𝐟𝐞♡★",
   "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
-  "logo": "https://telegra.ph/file/eba02aefd3fef2f02623d.jpg",
+  "logo": "https://telegra.ph/file/874260f1a57fee316707b.jpg",
   "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/ImJanindu/GroupMusicBot",
+  "repository": "https://github.com/rakeshyt/DevilHackerMusic",
   "stack": "container",
   "env": {
     "SESSION_NAME": {
