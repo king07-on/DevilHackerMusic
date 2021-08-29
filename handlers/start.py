@@ -4,24 +4,24 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from config import BOT_USERNAME
 
 
-@Client.on_message(filters.command(["start", "start@TrishaMyLifeBot"]) & filters.private & ~filters.channel)
+@Client.on_message(filters.command(["start", "start@DevilHackerMusicBot"]) & filters.private & ~filters.channel)
 async def start(_, message: Message):
     await message.reply_text(
         text="**Hello 👋🏻 {}!**\n\nI **Can Play Music In Voice Chats of Telegram Groups.**I Have A **lot of cool feature that will amaze You!**\n\n**Click /cmdlist For More Help On My Usage ❤**".format(message.from_user.mention),
         reply_markup=InlineKeyboardMarkup(
             [[
-            InlineKeyboardButton("➕ Add To Your Group ➕", url="https://t.me/TrishaMyLifeBot?startgroup=true")
+            InlineKeyboardButton("➕ Add To Your Group ➕", url="https://t.me/DevilHackerMusicBot?startgroup=true")
             ],[
             InlineKeyboardButton("💬 Group", url="https://t.me/TheModdingGod"),
             InlineKeyboardButton("My Dev 🤴", url="https://t.me/DevilHackerRakesh")
             ],[
-            InlineKeyboardButton("Commands 🛠", url="https://telegra.ph/Music-Bot-05-07")
+            InlineKeyboardButton("😁 Repo 🇮🇳", url="https://github.com/rakeshyt/DevilHackerMusic")
             ]]
         ),
         disable_web_page_preview=True
     )
         
-@Client.on_message(filters.command(["start", "start@TrishaMyLifeBot"]) & ~filters.private & ~filters.channel)
+@Client.on_message(filters.command(["start", "start@DevilHackerMusicBot"]) & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
     await message.reply_text(
         text="**Music Bot Is Online ✅**",
@@ -33,7 +33,7 @@ async def gstart(_, message: Message):
     )
 
 
-@Client.on_message(filters.command(["cmdlist", "start@TrishaMyLifeBot"]) & filters.private & ~filters.channel)
+@Client.on_message(filters.command(["cmdlist", "start@DevilHackerMusicBot"]) & filters.private & ~filters.channel)
 async def cmdlist(_, message: Message):
     await message.reply_text(
         text="""**Group Music Bot : Help Menu**
@@ -41,7 +41,7 @@ async def cmdlist(_, message: Message):
 __× First Add Me To Your Group..
 × Promote Me As Admin In Your Group With All Permission..__
 
-**🏷 Common Commands.**
+**🏷 Common Commands.@TheModdingGod**
 
 • `/play` - Song Name : __Plays Via Youtube__
 • `/dplay` - Song Name : __Play Via Deezer__
@@ -55,7 +55,7 @@ __× First Add Me To Your Group..
 • `/saavn` - song name : __download songs you want quickly via saavn__
 • `/search` - YouTube Title : __(Get YouTube Search Query)__
 
-**🏷 Group Admin Commands.**
+**🏷 Group Admin Commands.@DevilHackerRakesh**
 
 • `/skip` : __Skips Music__
 • `/pause` : __Pause Playing Music__
