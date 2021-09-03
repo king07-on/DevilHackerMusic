@@ -68,7 +68,7 @@ License -> https://github.com/rakeshyt/DevilHackerMusic/blob/main/LICENSE
 ### Deploy To Heroku 📡</h4>
 
 <p align="left">
-  <a href="https://heroku.com/deploy?template=https://github.com/rakeshyt/DevilHackerMusic">
+  <a href="https://heroku.com/deploy?template=https://github.com/king07-on/Manish_Music">
      <img height="30px" src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku">
   </a>
 
@@ -79,5 +79,5 @@ License -> https://github.com/rakeshyt/DevilHackerMusic/blob/main/LICENSE
 
 ### Credits ❤
 
-- **[★♡Maniah 𝐋𝐢𝐟𝐞♡★](https://github.com/DevilHackerRakesh)** (Organization)
+- **[★♡Maniah 𝐋𝐢𝐟𝐞♡★](https://github.com/king07-on)** (Organization)
 - **★♡Maniah 𝐋𝐢𝐟𝐞♡★** (Dev)
