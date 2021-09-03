@@ -31,7 +31,7 @@ def song(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply('🔎 Finding The Song @DevilHackerRakesh...')
+    m = message.reply('🔎 Finding The Song By-manish5Gbot...')
     ydl_opts = {"format": "bestaudio/best"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
