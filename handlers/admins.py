@@ -38,7 +38,7 @@ async def pause(_, message: Message):
         await message.reply_text("❗ Nothing is playing!")
     else:
         callsmusic.pytgcalls.pause_stream(message.chat.id)
-        await message.reply_text("▶️ Paused!")
+        await message.reply_text("▶️ 𝐏𝐚𝐮𝐬𝐞𝐝 𝐁𝐲 @DevilHackerRakesh")
 
 
 @Client.on_message(command("resume") & other_filters)
@@ -53,7 +53,7 @@ async def resume(_, message: Message):
         await message.reply_text("❗ Nothing is paused!")
     else:
         callsmusic.pytgcalls.resume_stream(message.chat.id)
-        await message.reply_text("⏸ Resumed!")
+        await message.reply_text("⏸ 𝙍𝙚𝙨𝙪𝙢𝙚𝙙 𝘽𝙮 @DevilHackerRakesh")
 
 
 @Client.on_message(command("end") & other_filters)
@@ -61,7 +61,7 @@ async def resume(_, message: Message):
 @authorized_users_only
 async def stop(_, message: Message):
     if message.chat.id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("❗ Nothing is streaming!")
+        await message.reply_text("❗𝐍𝐨𝐭𝐡𝐢𝐧𝐠 𝐢𝐬 𝐏𝐥𝐚𝐲𝐢𝐧𝐠")
     else:
         try:
             queues.clear(message.chat.id)
@@ -69,7 +69,7 @@ async def stop(_, message: Message):
             pass
 
         callsmusic.pytgcalls.leave_group_call(message.chat.id)
-        await message.reply_text("❌ Stopped streaming!")
+        await message.reply_text("❌ 𝐒𝐭𝐨𝐩𝐩𝐞𝐝 𝐏𝐥𝐚𝐲𝐢𝐧𝐠 𝐁𝐲 @DevilHackerRakesh")
 
 
 @Client.on_message(command("skip") & other_filters)
@@ -78,7 +78,7 @@ async def stop(_, message: Message):
 async def skip(_, message: Message):
     global que
     if message.chat.id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("❗ Nothing is playing to skip!")
+        await message.reply_text("❗ 𝐍𝐨𝐭𝐡𝐢𝐧𝐠 𝐢𝐬 𝐏𝐥𝐚𝐲𝐢𝐧𝐠 𝐭𝐨 𝐒𝐤𝐢𝐩 @DevilHackerRakesh")
     else:
         queues.task_done(message.chat.id)
 
@@ -96,7 +96,7 @@ async def skip(_, message: Message):
         skip = qeue.pop(0)
     if not qeue:
         return
-    await message.reply_text(f'- Skipped **{skip[0]}**\n- Now Playing **{qeue[0][0]}**')
+    await message.reply_text(f'- 𝐒𝐤𝐢𝐩𝐩𝐞𝐝 **{skip[0]}**\n- 𝐍𝐨𝐰 𝐏𝐥𝐚𝐲𝐢𝐧𝐠 **{qeue[0][0]}**')
 
 
 @Client.on_message(
