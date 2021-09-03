@@ -1,4 +1,4 @@
-### ★♡𝐓𝐫𝐢𝐬𝐡𝐚 𝐌𝐲 𝐋𝐢𝐟𝐞♡★
+### ★♡Maniah 𝐋𝐢𝐟𝐞♡★
 
 **A bot that can play music on telegram group's voice call.Telegram bot + userbot for streaming audio in group calls.**
 
@@ -79,5 +79,5 @@ License -> https://github.com/rakeshyt/DevilHackerMusic/blob/main/LICENSE
 
 ### Credits ❤
 
-- **[★♡𝐓𝐫𝐢𝐬𝐡𝐚 𝐌𝐲 𝐋𝐢𝐟𝐞♡★](https://github.com/DevilHackerRakesh)** (Organization)
-- **★♡𝐓𝐫𝐢𝐬𝐡𝐚 𝐌𝐲 𝐋𝐢𝐟𝐞♡★** (Dev)
+- **[★♡Maniah 𝐋𝐢𝐟𝐞♡★](https://github.com/DevilHackerRakesh)** (Organization)
+- **★♡Maniah 𝐋𝐢𝐟𝐞♡★** (Dev)
