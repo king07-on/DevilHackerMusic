@@ -304,9 +304,9 @@ async def m_cb(b, cb):
             temp.append(t)
         now_playing = temp[0][0]
         by = temp[0][1].mention(style='md')
-        msg = "**Now Playing** in {}".format(cb.message.chat.title)
+        msg = "**𝐍𝐨𝐰 𝐏𝐥𝐚𝐲𝐢𝐧𝐠** in {}".format(cb.message.chat.title)
         msg += "\n- "+ now_playing
-        msg += "\n- Req by "+by
+        msg += "\n- 𝐑𝐞𝐪 𝐛𝐲 "+by
         temp.pop(0)
         if temp:
              msg += '\n\n'
@@ -315,7 +315,7 @@ async def m_cb(b, cb):
                  name = song[0]
                  usr = song[1].mention(style='md')
                  msg += f'\n- {name}'
-                 msg += f'\n- Req by {usr}\n'
+                 msg += f'\n- 𝐑𝐞𝐪 𝐛𝐲 {usr}\n'
         await cb.message.edit(msg)      
                       
     elif type_ == 'resume':     
@@ -421,7 +421,7 @@ async def play(_, message: Message):
                               invitelink = await _.export_chat_invite_link(chid)
                           except:
                               await lel.edit(
-                                  "<b>Add me as admin of yor group first</b>",
+                                  "<b>𝘼𝙙𝙙 𝙈𝙚 𝘼𝙨 𝘼𝙙𝙢𝙞𝙣 𝙤𝙛 𝙔𝙤𝙪𝙧 𝙂𝙧𝙤𝙪𝙥 𝙁𝙞𝙧𝙨𝙩</b>",
                               )
                               return
 
@@ -429,7 +429,7 @@ async def play(_, message: Message):
                               await USER.join_chat(invitelink)
                               await USER.send_message(message.chat.id,"I joined this group for playing music in VC")
                               await lel.edit(
-                                  "<b>helper userbot joined your chat</b>",
+                                  "<b>𝐇𝐞𝐥𝐩𝐞𝐫 𝐃𝐞𝐯𝐢𝐥👿 𝐉𝐨𝐢𝐧𝐞𝐝 𝐘𝐨𝐮𝐫 𝐂𝐡𝐚𝐭</b>",
                               )
 
                           except UserAlreadyParticipant:
@@ -446,12 +446,12 @@ async def play(_, message: Message):
         #lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            f"<i> {user.first_name} Userbot not in this chat, Ask admin to send /play command for first time or add {user.first_name} manually</i>"
+            f"<i> {user.first_name} 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐧𝐨𝐭 𝐢𝐧 𝐭𝐡𝐢𝐬 𝐜𝐡𝐚𝐭, 𝐀𝐬𝐤 @DevilHackerRakesh 𝐓𝐨 𝐒𝐞𝐧𝐝 /play 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐅𝐨𝐫 𝐅𝐢𝐫𝐬𝐭 𝐓𝐢𝐦𝐞 𝐎𝐫 𝐀𝐝𝐝 {user.first_name} 𝐌𝐚𝐧𝐮𝐚𝐥𝐥𝐲</i>"
         )
         return     
     sender_id = message.from_user.id
     sender_name = message.from_user.first_name
-    await lel.edit("**__Searching Your Song__**")
+    await lel.edit("**__𝙎𝙚𝙖𝙧𝙘𝙝𝙞𝙣𝙜 𝙔𝙤𝙪𝙧 𝙎𝙤𝙣𝙜 @DevilHackerRakesh__**")
     sender_id = message.from_user.id
     user_id = message.from_user.id
     sender_name = message.from_user.first_name
@@ -462,7 +462,7 @@ async def play(_, message: Message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    await lel.edit("**__Processing Your Song__**")
+    await lel.edit("**__𝙋𝙧𝙤𝙘𝙚𝙨𝙨𝙞𝙣𝙜 𝙔𝙤𝙪𝙧 𝙎𝙤𝙣𝙜 @DevilHackerRakesh__**")
     ydl_opts = {"format": "bestaudio/best"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -478,7 +478,7 @@ async def play(_, message: Message):
         views = results[0]["views"]
 
     except Exception as e:
-        await lel.edit("Song not found.Try another song or maybe spell it properly.")
+        await lel.edit("𝘚𝘰𝘯𝘨 𝘕𝘰𝘵 𝘍𝘰𝘶𝘯𝘥.𝐓𝐫𝐲 𝐀𝐧𝐨𝐭𝐡𝐞𝐫 𝐒𝐨𝐧𝐠 Or 𝙎𝙥𝙚𝙡𝙡𝙞𝙣𝙜 𝙏𝙞𝙘𝙠 𝙆𝙖𝙧 𝘼𝙥𝙣𝙞😁.")
         print(str(e))
         return
 
@@ -511,7 +511,7 @@ async def play(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
         photo="final.png", 
-        caption=f"#⃣ Your requested song **queued** at position {position}!",
+        caption=f"#⃣ Your Requested Song **queued** At Position {position}!",
         reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -533,7 +533,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="▶️ **Playing** Here The Song Requested By {}".format(
+        caption="▶️ **Playing** @DevilHackerRakesh 𝐇𝐞𝐫𝐞 𝐓𝐡𝐞 𝐒𝐨𝐧𝐠 𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲 {}".format(
         message.from_user.mention()
         ),
     )
