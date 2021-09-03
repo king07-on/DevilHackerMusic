@@ -12,7 +12,7 @@
 [![Report Bugs!](https://badgen.net/badge/🐞%20Report%20/Bugs/red)](https://telegram.dog/TheModdingGod)
 
 <p align="center">
-<a href="https://github.com/rakeshyt/DevilHackerMusic/commits/"> <img src="https://img.shields.io/github/last-commit/TG-MUSICS/TELEGRAM_VC_BOT?color=white&logo=github&logoColor=dark&style=for-the-badge" /></a>
+<a href="https://github.com/king07-on/Manish_Music/commits/"> <img src="https://img.shields.io/github/last-commit/TG-MUSICS/TELEGRAM_VC_BOT?color=white&logo=github&logoColor=dark&style=for-the-badge" /></a>
 </p>
 
 ### Features✨
