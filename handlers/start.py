@@ -10,13 +10,11 @@ async def start(_, message: Message):
         text="**Hello 👋🏻 {}!**\n\nI **Can Play Music In Voice Chats of Telegram Groups.**I Have A **lot of cool feature that will amaze You!**\n\n**Click /cmdlist For More Help On My Usage ❤**".format(message.from_user.mention),
         reply_markup=InlineKeyboardMarkup(
             [[
-            InlineKeyboardButton("➕ Add To Your Group ➕", url="https://t.me/DevilHackerMusicBot?startgroup=true")
+            InlineKeyboardButton("➕ Add To Your Group ➕", url="https://t.me/Manish_5GMusic_bot?startgroup=true")
             ],[
-            InlineKeyboardButton("💬 Group", url="https://t.me/TheModdingGod"),
-            InlineKeyboardButton("My Dev 🤴", url="https://t.me/DevilHackerRakesh")
+            InlineKeyboardButton("💬 Group", url="https://t.me/Manish_mod"),
+            InlineKeyboardButton("My Dev 🤴", url="https://t.me/Loltage")
             ],[
-            InlineKeyboardButton("😁 Repo 🇮🇳", url="https://github.com/rakeshyt/DevilHackerMusic")
-            ]]
         ),
         disable_web_page_preview=True
     )
@@ -27,13 +25,13 @@ async def gstart(_, message: Message):
         text="**Music Bot Is Online ✅**",
         reply_markup=InlineKeyboardMarkup(
             [[
-            InlineKeyboardButton(text="🎙️ Support Group 🎙️", url="https://t.me/TheModdingGod")
+            InlineKeyboardButton(text="🎙️ Devloper ", url="https://t.me/Loltage")
             ]]
         )
     )
 
 
-@Client.on_message(filters.command(["cmdlist", "start@DevilHackerMusicBot"]) & filters.private & ~filters.channel)
+@Client.on_message(filters.command(["cmdlist", "start@Manish_5GMusic_bot"]) & filters.private & ~filters.channel)
 async def cmdlist(_, message: Message):
     await message.reply_text(
         text="""**Group Music Bot : Help Menu**
@@ -41,7 +39,7 @@ async def cmdlist(_, message: Message):
 __× First Add Me To Your Group..
 × Promote Me As Admin In Your Group With All Permission..__
 
-**🏷 Common Commands.@TheModdingGod**
+**🏷 Common Commands.@Manish_mod**
 
 • `/play` - Song Name : __Plays Via Youtube__
 • `/dplay` - Song Name : __Play Via Deezer__
@@ -55,7 +53,7 @@ __× First Add Me To Your Group..
 • `/saavn` - song name : __download songs you want quickly via saavn__
 • `/search` - YouTube Title : __(Get YouTube Search Query)__
 
-**🏷 Group Admin Commands.@DevilHackerRakesh**
+**🏷 Group Admin Commands.@Loltage**
 
 • `/skip` : __Skips Music__
 • `/pause` : __Pause Playing Music__
