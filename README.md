@@ -8,8 +8,8 @@
   </a>
 </p>
 
-[![Ask Me Anything !](https://img.shields.io/badge/🤔%20Ask%20me-anything-1abc9c.svg)](https://telegram.dog/DevilHackerRakesh)
-[![Report Bugs!](https://badgen.net/badge/🐞%20Report%20/Bugs/red)](https://telegram.dog/TheModdingGod)
+[![Ask Me Anything !](https://img.shields.io/badge/🤔%20Ask%20me-anything-1abc9c.svg)](https://telegram.dog/Loltage)
+[![Report Bugs!](https://badgen.net/badge/🐞%20Report%20/Bugs/red)](https://telegram.dog/Loltage)
 
 <p align="center">
 <a href="https://github.com/king07-on/Manish_Music/commits/"> <img src="https://img.shields.io/github/last-commit/TG-MUSICS/TELEGRAM_VC_BOT?color=white&logo=github&logoColor=dark&style=for-the-badge" /></a>
